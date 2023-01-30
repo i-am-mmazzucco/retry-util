@@ -1,0 +1,46 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+        "prettier",
+        "jest",
+        "@typescript-eslint"
+    ],
+    "env": {
+        "es6": true,
+        "jest/globals": true,
+        "es2021": true,
+        "node": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-console": 2,
+        "prettier/prettier": "error",
+        "standard/array-bracket-even-spacing": "off",
+        "standard/computed-property-even-spacing": "off",
+        "standard/object-curly-even-spacing": "off",
+        "no-extra-semi": "error",
+        "no-mixed-spaces-and-tabs": "off",
+        "arrow-parens": [
+          2,
+          "as-needed"
+        ],
+        "comma-dangle": [
+          "error",
+          "never"
+        ]
+    },
+    "ignorePatterns": [
+        "dist/*",
+        "coverage/*",
+        "node_modules/*"
+    ]
+}
